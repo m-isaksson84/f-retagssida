@@ -3,8 +3,13 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #333333;
+  text-align: center;
 }
 
 header {
@@ -16,7 +21,6 @@ header {
   background-color: #212121;
   color: white;
   text-align: center;
-  overflow: hidden;
 }
 
 header nav {
@@ -36,6 +40,9 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  color: white;
+  font-size: 24px;
+  position: relative;
 }
 
 footer {
@@ -56,4 +63,27 @@ nav a:hover {
 nav a:not(:hover) {
   background-color: #ff1500;
   transition: 0.5s;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.banner img {
+  margin: 100px;
+  flex: 0 1 auto;
+  width: 1500px;
+}
+
+.featured img {
+  flex: 0 1 auto;
+  width: 900px;
+}
+
+@media (max-width: 600px) {
+  .image-container img {
+    width: 300px;
+  }
 }
