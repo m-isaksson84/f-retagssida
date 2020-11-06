@@ -83,7 +83,10 @@ nav a:not(:hover) {
 }
 
 @media (max-width: 600px) {
-  .image-container img {
+  .banner img {
     width: 300px;
+  }
+  .featured img {
+    width: 200px;
   }
 }
