@@ -1,0 +1,19 @@
+body {
+  background-color: #333333;
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  font-family: "Roboto Slab", serif;
+  font-size: 32px;
+  background-color: #212121;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+header nav {
+  color: white;
+  background-color: #ff0000;
+}
