@@ -14,6 +14,7 @@ body {
 
 header {
   display: grid;
+  justify-content: center;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   font-family: "Roboto Slab", serif;
@@ -21,14 +22,34 @@ header {
   background-color: #212121;
   color: white;
   text-align: center;
+  color: white;
+  text-decoration: none;
 }
 
-header nav {
+header img {
+  width: 75px;
+}
+
+.navHead {
+  margin: 1.5%;
+}
+
+.navHead a {
+  margin: 10%;
+}
+
+header .navMain {
   background-color: #ff0000;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+}
+
+input {
+  width: 30%;
+  height: 50px;
+  font-size: 24px;
 }
 
 a {
@@ -55,13 +76,25 @@ footer {
   text-align: center;
 }
 
-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+.navMain a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(51, 51, 51);
+  padding-left: 100px;
+  padding-right: 100px;
   transition: 1s;
 }
 
-nav a:not(:hover) {
-  background-color: #ff1500;
+.navMain a:not(:hover) {
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.5s;
+}
+
+.navHead a:hover {
+  text-decoration: underline;
+  transition: 1s;
+}
+
+.navHead a:not(:hover) {
   transition: 0.5s;
 }
 
@@ -74,14 +107,16 @@ nav a:not(:hover) {
 .banner img {
   margin: 100px;
   flex: 0 1 auto;
-  width: 1500px;
+  width: 60%;
 }
 
 .featured img {
+  margin-bottom: 100px;
   flex: 0 1 auto;
-  width: 900px;
+  width: 40%;
 }
 
+/*
 @media (max-width: 600px) {
   .banner img {
     width: 300px;
@@ -90,3 +125,4 @@ nav a:not(:hover) {
     width: 200px;
   }
 }
+*/
