@@ -13,10 +13,6 @@ body {
 }
 
 header {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   font-family: "Roboto Slab", serif;
   font-size: 32px;
   background-color: #212121;
@@ -27,15 +23,7 @@ header {
 }
 
 header img {
-  width: 75px;
-}
-
-.navHead {
-  margin: 1.5%;
-}
-
-.navHead a {
-  margin: 10%;
+  width: 5rem;
 }
 
 header .navMain {
@@ -58,34 +46,32 @@ a {
 }
 
 main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   color: white;
   font-size: 24px;
-  position: relative;
 }
 
 footer {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   background-color: #212121;
   color: white;
   font-size: 32px;
   text-align: center;
 }
 
+.navHead {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .navMain a:hover {
   background-color: rgba(0, 0, 0, 0.5);
   color: rgb(51, 51, 51);
-  padding-left: 100px;
-  padding-right: 100px;
   transition: 1s;
 }
 
-.navMain a:not(:hover) {
-  background-color: rgba(0, 0, 0, 0);
+.navMain a {
   transition: 0.5s;
 }
 
@@ -101,11 +87,10 @@ footer {
 .img {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .banner img {
-  margin: 100px;
+  margin: 5%;
   flex: 0 1 auto;
   width: 60%;
 }
