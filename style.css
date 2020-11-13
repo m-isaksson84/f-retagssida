@@ -14,11 +14,12 @@ body {
 
 header {
   font-family: "Roboto Slab", serif;
+  position: sticky;
+  top: 0;
   font-size: 32px;
   background-color: #212121;
   color: white;
   text-align: center;
-  color: white;
   text-decoration: none;
 }
 
@@ -92,13 +93,22 @@ footer {
 .banner img {
   margin: 5%;
   flex: 0 1 auto;
-  width: 60%;
+  width: 80%;
 }
 
 .featured img {
   margin-bottom: 100px;
   flex: 0 1 auto;
-  width: 40%;
+  width: 50%;
+}
+.products img {
+  width: 50%;
+}
+.products {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-between;
+  padding-left: 13%;
 }
 
 /*
