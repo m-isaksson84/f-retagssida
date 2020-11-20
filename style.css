@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: #333333;
+  background-color: #252525;
   text-align: center;
 }
 
@@ -17,28 +17,37 @@ header {
   position: sticky;
   top: 0;
   font-size: 32px;
-  background-color: #212121;
+  background-color: #1d1d1d;
   color: white;
   text-align: center;
   text-decoration: none;
 }
 
+.logo {
+  width: 6rem;
+  margin: 0px;
+}
+
 header img {
-  width: 5rem;
+  width: 3rem;
 }
 
 header .navMain {
-  background-color: #ff0000;
+  background-color: #e20000;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
   align-items: center;
   flex-wrap: wrap;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.603);
 }
 
 input {
   width: 30%;
   height: 50px;
   font-size: 24px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.37);
 }
 
 a {
@@ -59,16 +68,20 @@ article {
 
 p {
   font: "arial";
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
   font-size: 16px;
   display: flex;
   flex-wrap: wrap;
   text-align:justify;
 }
 
+li {
+  list-style-type: none;
+}
+
 footer {
-  background-color: #212121;
+  background-color: #1d1d1d;
   color: white;
   font-size: 32px;
   text-align: center;
@@ -91,6 +104,11 @@ footer {
 
 .navMain a {
   transition: 0.5s;
+  color: white;
+  padding-left: 6%;
+  padding-right: 6%;
+  text-decoration: none;
+
 }
 
 .navHead a:hover {
@@ -108,29 +126,32 @@ footer {
 }
 
 .banner img {
-  margin: 5%;
+  margin: 2%;
   flex: 0 1 auto;
-  width: 80%;
+  width: 60%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.603);
 }
 
 .featured img {
-  margin-bottom: 100px;
+  margin-bottom: 10%;
   flex: 0 1 auto;
-  width: 50%;
+  width: 40%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.603);
 }
 
 .products img {
   width: 12%;
   margin: 1%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.603);
 }
 
-/*
-@media (max-width: 600px) {
-  .banner img {
-    width: 300px;
+
+@media (max-width: 950px) {
+  input {
+    display: none;
   }
-  .featured img {
-    width: 200px;
+  header img {
+    display: none;
   }
 }
-*/
+
