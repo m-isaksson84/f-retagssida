@@ -51,6 +51,22 @@ main {
   font-size: 24px;
 }
 
+article {
+  font-size: 42px;
+  margin: 1%;
+  padding-top: 1%;
+}
+
+p {
+  font: "arial";
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align:justify;
+}
+
 footer {
   background-color: #212121;
   color: white;
@@ -101,14 +117,10 @@ footer {
   flex: 0 1 auto;
   width: 50%;
 }
+
 .products img {
-  width: 50%;
-}
-.products {
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  justify-content: space-between;
-  padding-left: 13%;
+  width: 12%;
+  margin: 1%;
 }
 
 /*
