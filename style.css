@@ -23,11 +23,6 @@ header {
   text-decoration: none;
 }
 
-.logo {
-  width: 6rem;
-  margin: 0px;
-}
-
 header img {
   width: 3rem;
 }
@@ -116,8 +111,9 @@ footer {
   transition: 1s;
 }
 
-.navHead a:not(:hover) {
-  transition: 0.5s;
+.logo {
+  width: 6rem;
+  margin: 0px;
 }
 
 .img {
@@ -143,6 +139,48 @@ footer {
   width: 12%;
   margin: 1%;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.603);
+}
+
+.shirtsDropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.shirtsDropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1d1d1d;
+  width: 150vh;
+  height: 500%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.603);
+  padding: 12px 16px;
+  /*z-index: 1;*/
+}
+
+.shirtsDropdown:hover .shirtsDropdown-content {
+  display: block;
+  display: flex;
+}
+
+.longsleevesDropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.longsleevesDropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1d1d1d;
+  width: 150vh;
+  height: 500%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.603);
+  padding: 12px 16px;
+  /*z-index: 1;*/
+}
+
+.longsleevesDropdown:hover .longsleevesDropdown-content {
+  display: block;
+  display: flex;
 }
 
 @media (max-width: 950px) {
