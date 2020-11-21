@@ -81,6 +81,7 @@ footer {
   font-size: 32px;
   text-align: center;
   margin-top: 10%;
+  padding: 1%;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.603), 0px -5px 5px rgba(0, 0, 0, 0.603);
 }
 
@@ -100,8 +101,6 @@ footer {
 
 .navMain a {
   color: white;
-  padding-left: 6%;
-  padding-right: 6%;
   text-decoration: none;
 }
 
@@ -198,8 +197,30 @@ footer {
   display: flex;
 }
 
+.hoodiesDropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.hoodiesDropdown-content {
+  display: none;
+  flex-wrap: wrap;
+  position: absolute;
+  background-color: #1d1d1d;
+  width: 20vh;
+  height: 500%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.603);
+  padding: 12px 16px;
+  /*z-index: 1;*/
+}
+
+.hoodiesDropdown:hover .longsleevesDropdown-content {
+  display: block;
+  display: flex;
+}
+
 @media (max-width: 950px) {
-  input {
+  header input {
     display: none;
   }
   header img {
